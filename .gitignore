@@ -1,3 +1,8 @@
 /data
-
+*.json
+*.env
+*.txt
 ./deepgram/result
+/deepgram/.env
+/text_processor/pororo
+/ai-server

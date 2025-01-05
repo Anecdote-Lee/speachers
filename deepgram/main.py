@@ -10,7 +10,7 @@ from deepgram import (
 )
 
 # Path to the audio file
-AUDIO_FILE = "./data/example2.m4a"
+AUDIO_FILE = "../data/example2.m4a"
 load_dotenv()
 print(os.environ.get("DEEPGRAM_API_KEY"))
 def main():
@@ -20,7 +20,7 @@ def main():
 
     # Define the headers for the HTTP request
     headers = {
-        "Authorization": os.environ.get("DEEPGRAM_API_KEY"),
+        "Authorization": "Token " + os.environ.get("DEEPGRAM_API_KEY"),
         "Content-Type": "audio/*"
     }
     print(headers)
